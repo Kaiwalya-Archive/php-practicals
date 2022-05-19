@@ -18,11 +18,11 @@
         }
 
         //Creating databse
-        $sql = "CREATE DATABASE infodata";
+        $sql = "CREATE DATABASE company";
         
         //Error handling if any problem while creating database
         if($conn->query($sql) === "TRUE") {
-            echo "Database with name infodata created";
+            echo "Database with name company created";
         } else {
             echo "Error".$conn->error;
         }
