@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title> FORM </title>
+</head>
+<style>
+    body{
+        padding: 20px;
+    }
+    form{
+        padding: 25px;
+    }
+    .form-row{
+        padding: 5px;
+    }
+
+    .form-check{
+        padding-inline: 50px;
+    }
+</style>
+<body>
+    <form class="border border-info">
+        <div class="form-row ">
+          <div class="col-md-4 mb-3">
+            <label for="validationDefault01">First name</label>
+            <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
+          </div>
+        </div>
+        <div class="form-row ">
+          <div class="col-md-4 mb-3">
+            <label for="validationDefault01">Last name</label>
+            <input type="text" class="form-control" id="validationDefault01" placeholder="Last name" value="Martin" required>
+          </div>
+        </div>
+        <div class="form-row ">
+          <div class="col-md-4 mb-3">
+            <label for="validationDefault01">Password</label>
+            <input type="password" class="form-control" id="validationDefault01" placeholder="Password " value="pass@123" required>
+          </div>
+        </div>
+        <div class="form-row">
+            <label class="l">Class: </label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  TYCO
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  SYCO
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  FYCO
+                </label>
+              </div>
+        </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                  <label class="form-check-label" for="invalidCheck2">
+                    Agree to terms and conditions
+                  </label>
+                </div>
+              </div>
+        </div>
+        <button class="btn btn-primary mx-auto" style="width: 200px;" type="submit">Submit form</button>
+      </form>
+</body>
+</html>
