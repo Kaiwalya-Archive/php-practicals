@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title> FORM </title>
+</head>
+<style>
+    body{
+        padding: 20px;
+        width: 500px;
+        align-items: center;
+        align-content: center;
+    }
+    .form-control{
+        width: 400px;
+    }
+    form{
+        padding: 25px;
+        align-items: center;
+    }
+    .form-row{
+        padding: 5px;
+        align-items: ce;
+    }
+
+    .form-select{
+        width: 400px;
+        padding:5px;
+    }
+    h1{
+        margin: 5px;
+    }
+    .msg{
+        margin-top: 10px;
+    }
+</style>
+<body>
+    <form class="border border-success ">
+        <div class="form-row ">
+          <div class="">
+            <label for="validationDefault01">Name</label>
+            <input type="text" class="form-control border-dark" id="validationDefault01" placeholder="First name" value="Mark" required>
+          </div>
+        </div>
+       <div class="form-row">
+        <select class="form-select" multiple aria-label="multiple select example">
+            <option selected>Select Class</option>
+            <option value="1">TYCO</option>
+            <option value="2">SYCO</option>
+            <option value="3">FYCO</option>
+          </select>
+       </div>
+       <div class="form-row">
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option selected>Select Subject</option>
+            <option value="1">PWP</option>
+            <option value="2">PHP</option>
+            <option value="3">MAD</option>
+          </select>
+        </div>
+       </div>
+
+        <button class="btn btn-success mx-auto" style="width: 200px;" type="submit">Submit form</button>
+      </form>
+      <div class="msg border border-info ">
+      <div class="d-none d-lg-block d-print-block "><h1>Message visible on this window</h1></div>
+    </div>
+</body>
+</html>
