@@ -2,7 +2,7 @@
 
 <body>
 
-    <h1>Updating data from database</h1>
+    <h1>Retrieving data from database</h1>
 
     <?php 
         $dbname="company";
@@ -20,13 +20,14 @@
             echo "Connection established successfully <br>";
         }
 
-        //Retrieving  the data from database
-        $fetch = "SELECT * from `employee`";
-        $result = $conn->query($fetch);
-
-        while ($row = $result->fetch_assoc()) {
-            echo "Employees: ".$row["name"]."<br>";
-        }
+        //Updating  the data from database
+        $sql = "UPDATE `employee` SET `salary` = '60000' WHERE `name`= 'CEO'";
+        
+        if ($conn->query($sql) === "TRUE") {
+            echo "Field updated successfully";
+        } else {
+            echo "Error occured".$conn->error;
+        }    
         
         $conn->close();
     ?>
