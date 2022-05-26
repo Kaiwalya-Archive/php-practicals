@@ -5,12 +5,12 @@
     <h1>Connecting and creating database</h1>
 
     <?php 
-        $servername = "localhost";
+        $host = "localhost";
         $username="root";
         $password="";
 
         //Creating a database connection
-        $conn = new mysqli($servername, $username, $password);
+        $conn = new mysqli($host, $username, $password);
 
         //Error handling if connection fails
         if($conn->connect_error) {
