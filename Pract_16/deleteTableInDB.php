@@ -11,11 +11,11 @@
         $password="";
 
         //Connecting to the already created datbase
-        $conn = mysqli_connect($host, $username, $password, $dbname);
+        $conn = new mysqli($host, $username, $password, $dbname);
 
         //Handling error if not sconnected successfully
         if(!$conn) {
-            die("Error occured ".mysqli_connect_error());
+            die("Error occured ".$conn->connect_error);
         } else {
             echo "Connection established successfully <br>";
         }
