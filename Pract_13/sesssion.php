@@ -23,6 +23,11 @@
         echo "{$_SESSION["user"]}'s favourite color is {$_SESSION["color"]} <br>";
     ?>
 
+    <?php
+        //We call this to destroy all session variables
+        session_destroy();
+    ?>
+
 </body>
 
 </html>
